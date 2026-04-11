@@ -6,6 +6,7 @@ Local LLM study and experimentation project on Mac Studio (M1 Max, 32 GB).
 
 ```
 doc/     — documentation and setup guides
+docker/  — Docker Compose files (Open WebUI)
 test/    — pytest test files
 ```
 
@@ -23,6 +24,12 @@ test/    — pytest test files
   - Default model: `ollama:gemma3:27b`
   - Usage: `aichat "question"`, `aichat -s` for interactive session, `aichat -f file.py "review"`
 
+## Web UI
+
+- **Open WebUI** — ChatGPT-like browser interface at `http://localhost:3000`
+  - Run: `cd docker && docker compose up -d`
+  - Stop: `cd docker && docker compose down`
+
 ## Testing
 
 ```bash
@@ -37,3 +44,4 @@ Tests use `requests` against the local Ollama API. Ollama must be running.
 - pytest, requests (`pip3 install pytest requests`)
 - ollama (`brew install ollama`)
 - aichat (`brew install aichat`)
+- Docker (for Open WebUI)

@@ -22,6 +22,9 @@ brew install aichat
 
 # Python test dependencies
 pip3 install pytest requests
+
+# Open WebUI (requires Docker)
+cd docker && docker compose up -d
 ```
 
 ### Run Tests
@@ -32,8 +35,9 @@ python3 -m pytest test/ -v
 
 ## Project Structure
 
-```
+```text
 doc/     — setup guides and documentation
+docker/  — Docker Compose files (Open WebUI)
 test/    — API tests (pytest)
 ```
 
@@ -47,4 +51,5 @@ test/    — API tests (pytest)
 |------|---------|
 | [Ollama](https://ollama.com) | Local LLM runtime with Metal GPU acceleration |
 | [aichat](https://github.com/sigoden/aichat) | Terminal-based LLM chat client |
+| [Open WebUI](https://github.com/open-webui/open-webui) | ChatGPT-like web interface for Ollama |
 | [Gemma 3](https://ai.google.dev/gemma) | Google's open model family |

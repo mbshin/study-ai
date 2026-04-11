@@ -204,6 +204,38 @@ aichat -e "list all python files"
 aichat -m ollama:gemma3:4b "quick question"
 ```
 
+## Web UI: Open WebUI
+
+Open WebUI provides a ChatGPT-like browser interface for Ollama.
+
+### Run with Docker Compose
+
+```bash
+cd docker
+docker compose up -d
+```
+
+Open **http://localhost:3000** in your browser. It auto-detects Ollama and all available models.
+
+### Configuration
+
+- Docker Compose file: `docker/docker-compose.yml`
+- Data persisted in Docker volume `open-webui-data`
+- Connects to Ollama at `http://host.docker.internal:11434`
+
+### Manage
+
+```bash
+# Stop
+cd docker && docker compose down
+
+# Restart
+cd docker && docker compose up -d
+
+# View logs
+docker logs open-webui
+```
+
 ## Performance Tips for M1 Max
 
 1. **Use Metal GPU**: Both Ollama and llama.cpp automatically use Metal on macOS — no extra config needed.
