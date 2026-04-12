@@ -29,30 +29,97 @@ A structured learning path from fundamentals to hands-on practice with local LLM
 | RNNs / LSTMs | Sequence modeling, vanishing gradients |
 | Regularization | Dropout, batch normalization, weight decay |
 
-### 1.3 Math for AI (Intuition-First Approach)
+### 1.3 Math for AI (From the Ground Up)
 
-You don't need to be a math expert to learn AI. Focus on building intuition, not proofs.
-Use visual and interactive resources — skip the textbook-heavy approach.
+A step-by-step math path starting from basics. Each level builds on the previous one.
+Use visual resources and practice problems — not textbooks.
 
-**What to learn (and what to skip for now)**:
+#### Level 1: Arithmetic and Pre-Algebra (Start Here)
 
-| Topic | What You Need | Skip For Now |
-|-------|---------------|--------------|
-| Linear Algebra | Vectors as lists of numbers, matrix multiply as transformation, dot product as similarity | Eigenvalues, proofs, abstract spaces |
-| Calculus | Gradient = "which direction to improve", chain rule = "passing blame backwards" | Formal limits, integration, proofs |
-| Probability | Bayes = "updating beliefs with evidence", distributions = "shapes of randomness" | Measure theory, moment generating functions |
-| Statistics | Mean, variance, correlation — enough to read training metrics | Hypothesis testing, p-values |
+If math feels rusty, start here with no shame. This is the foundation everything else sits on.
 
-**Beginner-Friendly Math Resources**:
+| Topic | Why It Matters for AI |
+| ----- | --------------------- |
+| Fractions, decimals, percentages | Probabilities are expressed this way (0.95 = 95%) |
+| Negative numbers, absolute value | Loss values, gradients can be negative |
+| Exponents and logarithms | Exponentials appear everywhere (softmax, log-loss) |
+| Order of operations | Reading and writing formulas correctly |
+| Basic graphing (x-y plots) | Every training chart is a graph |
+
+**Resources**: [Khan Academy — Pre-Algebra](https://www.khanacademy.org/math/pre-algebra) (free, self-paced)
+
+#### Level 2: Algebra
+
+| Topic | Why It Matters for AI |
+| ----- | --------------------- |
+| Variables and equations | Model parameters are variables being solved for |
+| Functions (f(x) = ...) | Neural networks are nested functions |
+| Slopes and lines (y = mx + b) | Linear regression is literally fitting a line |
+| Systems of equations | Multiple constraints, multiple unknowns |
+| Summation notation (Σ) | Loss functions sum over all examples |
+
+**Resources**: [Khan Academy — Algebra 1 & 2](https://www.khanacademy.org/math/algebra) (free)
+
+#### Level 3: Linear Algebra (Essential for AI)
+
+This is the language neural networks speak — all data flows through matrices.
+
+| Topic | Why It Matters for AI |
+| ----- | --------------------- |
+| Vectors | A single data point = a vector (list of numbers) |
+| Matrices | A batch of data = a matrix, model weights = matrices |
+| Dot product | Measures similarity — core of attention mechanism |
+| Matrix multiplication | Every neural network layer is a matrix multiply |
+| Transpose | Reshaping data and weights |
+
+**Resources**:
 
 - [3Blue1Brown — Essence of Linear Algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) — Visual, no prerequisites
+- [Khan Academy — Linear Algebra](https://www.khanacademy.org/math/linear-algebra) — Practice problems
+- [Interactive Linear Algebra](https://textbooks.math.gatech.edu/ila/) — Free online textbook with visuals
+
+#### Level 4: Calculus (Gradient = How to Improve)
+
+You don't need all of calculus — just enough to understand how models learn.
+
+| Topic | Why It Matters for AI |
+| ----- | --------------------- |
+| Derivatives (rate of change) | "How much does the output change when I change this weight?" |
+| Chain rule | Backpropagation = chain rule applied through layers |
+| Partial derivatives | Models have millions of weights, each with its own gradient |
+| Gradient = vector of partials | Points in the direction of steepest improvement |
+| Minima and maxima | Training = finding the minimum of the loss function |
+
+**Resources**:
+
 - [3Blue1Brown — Essence of Calculus](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr) — Intuition over formulas
+- [Khan Academy — Calculus](https://www.khanacademy.org/math/calculus-1) — Step-by-step practice
+
+#### Level 5: Probability and Statistics
+
+| Topic | Why It Matters for AI |
+| ----- | --------------------- |
+| Probability basics | Every prediction is a probability |
+| Conditional probability | "What's the chance of X given Y?" — the core of language models |
+| Bayes' theorem | Updating beliefs with new evidence |
+| Mean, variance, std deviation | Reading training metrics and evaluating models |
+| Distributions (normal, uniform) | Data and weight initialization follow distributions |
+| Cross-entropy | The most common loss function for classification |
+
+**Resources**:
+
 - [StatQuest (YouTube)](https://www.youtube.com/@statquest) — Statistics and ML explained simply
 - [Seeing Theory](https://seeing-theory.brown.edu/) — Interactive probability visualizations
-- Khan Academy — Fill in specific gaps as needed (free)
+- [Khan Academy — Statistics & Probability](https://www.khanacademy.org/math/statistics-probability)
 
-**Practical tip**: Learn math *as you need it*. When you encounter a concept in an AI tutorial
-(e.g., "cross-entropy loss"), look up just that concept. Don't try to complete a math course first.
+#### Suggested Study Order
+
+```text
+Level 1 (1-2 weeks) → Level 2 (2-3 weeks) → Level 3 (3-4 weeks) → Level 4 (2-3 weeks) → Level 5 (2-3 weeks)
+```
+
+You can start Phase 2 (NLP concepts) while working through Levels 3-5.
+Start Phase 3 (hands-on LLM work) anytime — practical experience and math study reinforce each other.
 
 ---
 

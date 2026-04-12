@@ -17,6 +17,7 @@ test/    — pytest test files
 - `doc/claude-code-guide.md` — Claude Code features, commands, and configuration
 - `doc/eval-harness-engineering.md` — Building eval harnesses to test LLM outputs
 - `doc/gemma-llm-setup-guide.md` — Local Gemma LLM setup on Mac Studio
+- `doc/study-resources.md` — Curated links to all learning resources
 
 ## Local LLM Setup
 
