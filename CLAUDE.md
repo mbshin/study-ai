@@ -5,10 +5,17 @@ Local LLM study and experimentation project on Mac Studio (M1 Max, 32 GB).
 ## Project Structure
 
 ```
-doc/     — documentation and setup guides
+doc/     — documentation and study guides
 docker/  — Docker Compose files (Open WebUI)
 test/    — pytest test files
 ```
+
+## Study Guides
+
+- `doc/ai-study-guide.md` — Structured AI/ML learning path (foundations → advanced)
+- `doc/agentic-ai-and-modern-stack.md` — Agentic AI, MCP, and current AI tech stack
+- `doc/eval-harness-engineering.md` — Building eval harnesses to test LLM outputs
+- `doc/gemma-llm-setup-guide.md` — Local Gemma LLM setup on Mac Studio
 
 ## Local LLM Setup
 
