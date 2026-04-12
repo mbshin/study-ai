@@ -43,7 +43,19 @@ test/    — API tests (pytest)
 
 ## Documentation
 
-- [Gemma LLM Setup Guide](doc/gemma-llm-setup-guide.md) — hardware recommendations, Ollama/llama.cpp/Python/aichat setup
+### Study Guides
+
+- [AI Study Guide](doc/ai-study-guide.md) — Structured learning path from ML foundations to advanced topics
+- [Agentic AI and the Modern AI Stack](doc/agentic-ai-and-modern-stack.md) — Agentic AI, MCP protocol, and current AI tech landscape
+
+### Tool Guides
+
+- [Claude Code Guide](doc/claude-code-guide.md) — Features, commands, configuration, and tips for Claude Code
+- [Gemma LLM Setup Guide](doc/gemma-llm-setup-guide.md) — Running Gemma locally with Ollama, llama.cpp, and MLX
+
+### Engineering
+
+- [Eval Harness Engineering](doc/eval-harness-engineering.md) — Building evaluation harnesses to test LLM outputs
 
 ## Tools
 

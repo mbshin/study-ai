@@ -14,6 +14,7 @@ test/    — pytest test files
 
 - `doc/ai-study-guide.md` — Structured AI/ML learning path (foundations → advanced)
 - `doc/agentic-ai-and-modern-stack.md` — Agentic AI, MCP, and current AI tech stack
+- `doc/claude-code-guide.md` — Claude Code features, commands, and configuration
 - `doc/eval-harness-engineering.md` — Building eval harnesses to test LLM outputs
 - `doc/gemma-llm-setup-guide.md` — Local Gemma LLM setup on Mac Studio
 
