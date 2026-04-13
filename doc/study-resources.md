@@ -34,6 +34,7 @@ All learning resources in one place, organized by topic.
 
 - [Andrew Ng — Machine Learning Specialization](https://www.coursera.org/specializations/machine-learning-introduction) (Coursera) — Classic ML foundations
 - [fast.ai — Practical Deep Learning](https://www.fast.ai/) — Top-down, code-first approach
+- [AI for Everyone](https://learn.deeplearning.ai/courses/ai-for-everyone) (DeepLearning.AI) — Non-technical intro to AI by Andrew Ng
 - [DeepLearning.AI](https://www.deeplearning.ai) — Short courses on agents, RAG, fine-tuning, prompt engineering
 - [Anthropic Courses](https://github.com/anthropics/courses) — Free prompt engineering and tool use courses
 

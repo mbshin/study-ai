@@ -12,6 +12,7 @@ test/    — pytest test files
 
 ## Study Guides
 
+- `doc/ai-for-everyone.md` — AI for Everyone course notes (DeepLearning.AI)
 - `doc/ai-study-guide.md` — Structured AI/ML learning path (foundations → advanced)
 - `doc/agentic-ai-and-modern-stack.md` — Agentic AI, MCP, and current AI tech stack
 - `doc/claude-code-guide.md` — Claude Code features, commands, and configuration
