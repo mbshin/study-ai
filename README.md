@@ -46,16 +46,22 @@ test/    — API tests (pytest)
 ### Study Guides
 
 - [AI Study Guide](doc/ai-study-guide.md) — Structured learning path from ML foundations to advanced topics
+- [Math for AI Notes](doc/math-for-ai-notes.md) — Math study notes (pre-algebra → probability) for AI/ML
 - [Agentic AI and the Modern AI Stack](doc/agentic-ai-and-modern-stack.md) — Agentic AI, MCP protocol, and current AI tech landscape
 
-### Tool Guides
+### Tool & Platform Guides
 
 - [Claude Code Guide](doc/claude-code-guide.md) — Features, commands, configuration, and tips for Claude Code
 - [Gemma LLM Setup Guide](doc/gemma-llm-setup-guide.md) — Running Gemma locally with Ollama, llama.cpp, and MLX
+- [Paperclip Setup Guide](doc/paperclip-setup-guide.md) — AI company orchestration platform setup and usage
 
 ### Engineering
 
 - [Eval Harness Engineering](doc/eval-harness-engineering.md) — Building evaluation harnesses to test LLM outputs
+
+### Resources
+
+- [Study Resources](doc/study-resources.md) — Curated links to all learning resources
 
 ## Tools
 

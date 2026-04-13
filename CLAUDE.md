@@ -6,7 +6,7 @@ Local LLM study and experimentation project on Mac Studio (M1 Max, 32 GB).
 
 ```
 doc/     — documentation and study guides
-docker/  — Docker Compose files (Open WebUI)
+docker/  — Docker Compose files (Open WebUI, Paperclip)
 test/    — pytest test files
 ```
 
@@ -17,6 +17,8 @@ test/    — pytest test files
 - `doc/claude-code-guide.md` — Claude Code features, commands, and configuration
 - `doc/eval-harness-engineering.md` — Building eval harnesses to test LLM outputs
 - `doc/gemma-llm-setup-guide.md` — Local Gemma LLM setup on Mac Studio
+- `doc/math-for-ai-notes.md` — Math study notes (pre-algebra → probability) for AI/ML
+- `doc/paperclip-setup-guide.md` — Paperclip AI company orchestration platform
 - `doc/study-resources.md` — Curated links to all learning resources
 
 ## Local LLM Setup
@@ -38,6 +40,9 @@ test/    — pytest test files
 - **Open WebUI** — ChatGPT-like browser interface at `http://localhost:3000`
   - Run: `cd docker && docker compose up -d`
   - Stop: `cd docker && docker compose down`
+- **Paperclip** — AI company orchestration platform at `http://localhost:3100`
+  - Requires: clone repo into `docker/paperclip/`, set `BETTER_AUTH_SECRET` in `docker/.env`
+  - Run: `cd docker && docker compose up -d paperclip`
 
 ## Testing
 
@@ -53,4 +58,5 @@ Tests use `requests` against the local Ollama API. Ollama must be running.
 - pytest, requests (`pip3 install pytest requests`)
 - ollama (`brew install ollama`)
 - aichat (`brew install aichat`)
-- Docker (for Open WebUI)
+- Docker (for Open WebUI, Paperclip)
+- Node.js 20+, pnpm 9.15+ (for Paperclip from source)

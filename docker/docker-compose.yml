@@ -12,5 +12,49 @@ services:
       - open-webui-data:/app/backend/data
     restart: unless-stopped
 
+  paperclip-db:
+    image: postgres:17-alpine
+    container_name: paperclip-db
+    environment:
+      POSTGRES_USER: paperclip
+      POSTGRES_PASSWORD: paperclip
+      POSTGRES_DB: paperclip
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U paperclip -d paperclip"]
+      interval: 2s
+      timeout: 5s
+      retries: 30
+    volumes:
+      - paperclip-pgdata:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  paperclip:
+    build:
+      context: ./paperclip
+      dockerfile: Dockerfile
+    container_name: paperclip
+    ports:
+      - "3100:3100"
+    environment:
+      DATABASE_URL: postgres://paperclip:paperclip@paperclip-db:5432/paperclip
+      PORT: "3100"
+      HOST: "0.0.0.0"
+      SERVE_UI: "true"
+      PAPERCLIP_HOME: "/paperclip"
+      PAPERCLIP_DEPLOYMENT_MODE: "authenticated"
+      PAPERCLIP_DEPLOYMENT_EXPOSURE: "private"
+      PAPERCLIP_PUBLIC_URL: "${PAPERCLIP_PUBLIC_URL:-http://localhost:3100}"
+      BETTER_AUTH_SECRET: "${BETTER_AUTH_SECRET:?Set BETTER_AUTH_SECRET in .env}"
+      OPENAI_API_KEY: "${OPENAI_API_KEY:-}"
+      ANTHROPIC_API_KEY: "${ANTHROPIC_API_KEY:-}"
+    volumes:
+      - paperclip-data:/paperclip
+    depends_on:
+      paperclip-db:
+        condition: service_healthy
+    restart: unless-stopped
+
 volumes:
   open-webui-data:
+  paperclip-pgdata:
+  paperclip-data:
