@@ -18,7 +18,7 @@ test/    — pytest test files
 - `doc/claude-code-guide.md` — Claude Code features, commands, and configuration
 - `doc/eval-harness-engineering.md` — Building eval harnesses to test LLM outputs
 - `doc/gemma-llm-setup-guide.md` — Local Gemma LLM setup on Mac Studio
-- `doc/math-for-ai-notes.md` — Math study notes (pre-algebra → probability) for AI/ML
+- `doc/math-for-ai-notes.md` — Math study notes (pre-algebra → probability) for AI/ML, with deep dives on fractions, absolute value, exponents, and logarithms
 - `doc/paperclip-setup-guide.md` — Paperclip AI company orchestration platform
 - `doc/study-resources.md` — Curated links to all learning resources
 
